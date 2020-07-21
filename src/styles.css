@@ -47,3 +47,24 @@ button {
         margin-left: 180px;
     }
 }
+
+.floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.modal {
+    max-width: 600px;
+    max-height: 300px;
+    margin: 100px auto;
+    border-radius: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+}
+.modal h1 {
+    text-align: center;
+}
+.modal .modal-content {
+    padding: 15px;
+}

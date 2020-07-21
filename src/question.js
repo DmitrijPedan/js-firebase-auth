@@ -16,6 +16,23 @@ export class Question {
             .then(Question.renderList)
     }
 
+    static fetch(token) {
+        if (!token) {
+            return Promise.resolve(`<p class="error">У Вас нет токена</p>`);
+        }
+        return fetch(`https://questions-app-1ce3d.firebaseio.com/questions.json?auth=${token}`)
+            .then(res => res.json())
+            .then(res => {
+                if (res.error) {
+                    return `<p class="error">${questions.error}</p>`;
+                }
+                return res ? Object.keys(res).map(key => ({
+                    ...res[key],
+                    id: key
+                })) : []
+            })
+    }
+
     static renderList() {
         const questions = getQuestionsFromLS();
         const html = questions.length
