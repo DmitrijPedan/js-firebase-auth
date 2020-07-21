@@ -1,13 +1,55 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>App</title>
+<html>
+<head><style type="text/css">.mui-textfield.mui-textfield--float-label > label {-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;-o-transition:all .15s ease-out;transition:all .15s ease-out;}</style><style type="text/css">@keyframes mui-btn-inserted{from{transform:none;}to{transform:none;}}.mui-btn{animation-duration:0.0001s;animation-name:mui-btn-inserted;}@keyframes mui-dropdown-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-dropdown-inserted;}@keyframes mui-btn-inserted,mui-dropdown-inserted{from{transform:none;}to{transform:none;}}.mui-btn[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-btn-inserted,mui-dropdown-inserted;}@keyframes mui-tab-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="tab"]{animation-duration:0.0001s;animation-name:mui-tab-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > input{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > textarea{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-select-inserted{from{transform:none;}to{transform:none;}}.mui-select > select{animation-duration:0.0001s;animation-name:mui-select-inserted;}@keyframes mui-node-inserted{from{transform:none;}to{transform:none;}}.mui-select > select ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-inserted;}@keyframes mui-node-disabled{from{transform:none;}to{transform:none;}}.mui-select > select:disabled ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-disabled;}</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Auth</title>
 </head>
 <body>
+<div id="sidebar">
+    <div class="mui--text-white mui--text-display1 mui--align-vertical">Вопросы</div>
+</div>
+<div id="content" class="mui-container-fluid">
+    <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+            <br>
+            <br>
+            <div class="mui--text-black-54 mui--text-body2">Задай вопрос</div>
+            <div class="mui-divider"></div>
+            <br>
 
-</body>
-</html>
+<!-- form -->
+            <form class="mui-form" id="form">
+                <div class="mui-textfield mui-textfield--float-label">
+                    <input type="text" id="questionInput" required min="10" maxlength="256">
+                    <label for="questionInput">Вопрос?</label>
+                </div>
+                <button type="submit"
+                        class="mui-btn mui-btn--raised mui-btn--primary"
+                >
+                    Submit
+                </button>
+            </form>
+
+            <br>
+            <div class="mui--text-black-54 mui--text-body2">Ваши вопросы</div>
+            <div class="mui-divider"></div>
+            <div class="list">
+
+                <div class="mui--text-headline">MUI Acquires New Features</div>
+                <div class="mui--text-black-54">By <a href="#">Team MUI</a> 1 week ago</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis aliquam ipsum sed dignissim. Sed ac accumsan odio. Vivamus tristique dignissim neque. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc cursus felis nec purus condimentum vestibulum. Donec mauris nisi, sollicitudin eget iaculis id, suscipit id odio. <a href="#">Read more...</a></div>
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+</body></html>
